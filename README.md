@@ -84,9 +84,16 @@ response = openai.ChatCompletion.create(
     messages=[{"role": "user", "content": "Your prompt here"}]
 )
 
+
+
+
 # Usage
 - Type a question in the chat box (e.g., "What are the latest AI news?").
 
 - The agent will decide whether to search the database or answer directly.
 
 - Tool calls (database queries) are hidden from the user.
+  
+![Rag Bot](https://github.com/user-attachments/assets/f1765f85-7219-4d6a-ae90-237969f4f7c5)
+
+
