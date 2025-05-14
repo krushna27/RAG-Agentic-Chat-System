@@ -26,7 +26,7 @@ def query_news(keywords: str):
     sql = (
         "SELECT title, content FROM news "
         "WHERE MATCH(title, content) AGAINST (%s IN NATURAL LANGUAGE MODE) "
-        "ORDER BY published_at DESC LIMIT 3"
+        "ORDER BY published_at DESC"
     )
     cursor.execute(sql, (keywords,))
     results = cursor.fetchall()
